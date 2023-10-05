@@ -2,10 +2,11 @@ from custom_env import CustomEnv
 from DQN_agent import DQNAgent
 import numpy as np
 from custom_env import NUM_ACTIONS, EPISODES, OBSERVATION_SPACE_SIZE, BATCH_SIZE
+import gym
 
 
 # Crear una instancia del entorno personalizado
-env = CustomEnv()
+env = CustomEnv(gym.Env)
 
 # Crear una instancia del agente DQN
 agent = DQNAgent(NUM_ACTIONS)
